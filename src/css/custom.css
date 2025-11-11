@@ -1,0 +1,159 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #559dbf;
+  --ifm-color-primary-dark: #4d8dab;
+  --ifm-color-primary-darker: #4885a2;
+  --ifm-color-primary-darkest: #3b6e86;
+  --ifm-color-primary-light: #5dadd3;
+  --ifm-color-primary-lighter: #65b5dc;
+  --ifm-color-primary-lightest: #7dc5e8;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #7dc5e8;
+  --ifm-color-primary-dark: #65b5dc;
+  --ifm-color-primary-darker: #5dadd3;
+  --ifm-color-primary-darkest: #4895bf;
+  --ifm-color-primary-light: #95d5f4;
+  --ifm-color-primary-lighter: #a1ddf6;
+  --ifm-color-primary-lightest: #bdedfb;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Black navbar in light mode with white text */
+[data-theme='light'] .navbar {
+  background-color: #1c1e21 !important;
+  --ifm-navbar-background-color: #1c1e21;
+}
+
+[data-theme='light'] .navbar__title,
+[data-theme='light'] .navbar__link,
+[data-theme='light'] .navbar__brand,
+[data-theme='light'] .navbar__item {
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .navbar__link:hover,
+[data-theme='light'] .navbar__link--active {
+  color: #7dc5e8 !important;
+}
+
+[data-theme='light'] .navbar__toggle {
+  color: #ffffff !important;
+}
+
+/* Ensure all navbar items including GitHub link are visible */
+[data-theme='light'] .navbar__items a,
+[data-theme='light'] .navbar__items button {
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .navbar__items a:hover,
+[data-theme='light'] .navbar__items button:hover {
+  color: #7dc5e8 !important;
+}
+
+/* Ensure dropdown menus also have proper styling */
+[data-theme='light'] .dropdown__menu {
+  background-color: #1c1e21 !important;
+}
+
+[data-theme='light'] .dropdown__link {
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .dropdown__link:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #7dc5e8 !important;
+}
+
+/* Search bar styling in navbar for light mode */
+[data-theme='light'] .navbar__search-input {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+[data-theme='light'] .navbar__search-input::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Color mode toggle icon visibility in light mode with black navbar */
+[data-theme='light'] button[class*='colorModeToggle'],
+[data-theme='light'] button[class*='toggle_'],
+[data-theme='light'] .clean-btn {
+  color: #ffffff !important;
+}
+
+[data-theme='light'] button[class*='colorModeToggle']:hover,
+[data-theme='light'] button[class*='toggle_']:hover,
+[data-theme='light'] .clean-btn:hover {
+  color: #7dc5e8 !important;
+  background-color: transparent !important;
+}
+
+/* All SVG icons in navbar should be white in light mode */
+[data-theme='light'] .navbar svg {
+  fill: currentColor !important;
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .navbar *:hover svg {
+  color: #7dc5e8 !important;
+}
+
+/* Specifically target the color mode toggle button and icons */
+[data-theme='light'] .navbar [class*='toggle'] svg,
+[data-theme='light'] .navbar button[class*='toggle'] svg,
+[data-theme='light'] .navbar .clean-btn svg {
+  fill: #ffffff !important;
+}
+
+[data-theme='light'] .navbar [class*='toggle']:hover svg,
+[data-theme='light'] .navbar button[class*='toggle']:hover svg,
+[data-theme='light'] .navbar .clean-btn:hover svg {
+  fill: #7dc5e8 !important;
+}
+
+/* GitHub icon and external link icons */
+[data-theme='light'] .navbar [class*='iconExternalLink'],
+[data-theme='light'] .navbar__link svg {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .navbar__link:hover svg {
+  fill: #7dc5e8 !important;
+  color: #7dc5e8 !important;
+}
+
+/* Primary color text in hero title */
+.text-primary,
+.hero__title .text-primary {
+  color: var(--ifm-color-primary) !important;
+}
+
+[data-theme='dark'] .text-primary,
+[data-theme='dark'] .hero__title .text-primary {
+  color: var(--ifm-color-primary) !important;
+}
+
+/* Hero banner always has black background with white text */
+.hero__title,
+.hero__subtitle {
+  color: #ffffff !important;
+}
+
+/* Keep primary color for span inside hero title */
+.hero__title .text-primary {
+  color: var(--ifm-color-primary-light) !important;
+}

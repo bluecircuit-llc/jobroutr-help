@@ -1,0 +1,81 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 2rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background-color: #1c1e21 !important;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 1.5rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.searchContainer {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.searchForm {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.5rem;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.searchButton {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  background: var(--ifm-color-primary);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.searchButton:hover {
+  background: var(--ifm-color-primary-dark);
+}
+
+@media screen and (max-width: 600px) {
+  .searchForm {
+    flex-direction: column;
+  }
+  
+  .searchButton {
+    width: 100%;
+  }
+}
