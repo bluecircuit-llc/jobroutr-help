@@ -87,6 +87,7 @@ const config: Config = {
           position: 'left',
           label: 'Tutorial',
         },
+        {to: '/support', label: 'Support', position: 'left'},
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/bluecircuit-llc/jobroutr-help',
@@ -104,6 +105,10 @@ const config: Config = {
             {
               label: 'Tutorial',
               to: '/docs/intro',
+            },
+            {
+              label: 'Support',
+              to: '/support',
             },
           ],
         },
