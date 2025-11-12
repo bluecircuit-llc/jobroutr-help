@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/intro',
   },
   {
-    title: 'Onboarding Guide',
+    title: 'Onboarding',
     description: (
       <>
         Complete our 5-step onboarding process to connect QuickBooks, build services, 
@@ -31,44 +31,44 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/onboarding/create-user-account',
   },
   {
-    title: 'QuickBooks Integration',
+    title: 'Customer Management',
     description: (
       <>
-        Learn how to seamlessly integrate JobRoutr with QuickBooks Online to sync customers, 
-        products, and invoices for accurate accounting.
+        Manage your customers and their information. Add new customers, edit existing 
+        customers, and keep all customer data organized in one place.
       </>
     ),
-    link: '/docs/onboarding/connect-quickbooks',
+    link: '/docs/customer-management/customers',
   },
   {
-    title: 'Service Management',
+    title: 'Routes',
     description: (
       <>
-        Create and manage your service offerings with custom pricing, task lists, 
-        and duration estimates to standardize your operations.
+        Set up and manage routes within JobRoutr. Use the route builder and optimization 
+        tools to create efficient service schedules for your team.
       </>
     ),
-    link: '/docs/onboarding/build-service',
+    link: '/docs/routes/route-builder',
   },
   {
-    title: 'Email Configuration',
+    title: 'Operations',
     description: (
       <>
-        Set up automated customer communications with custom email templates, 
-        company branding, and service completion notifications.
+        Monitor your business with the dashboard, track service history, and generate 
+        detailed service reports to keep operations running smoothly.
       </>
     ),
-    link: '/docs/onboarding/configure-email',
+    link: '/docs/operations/dashboard',
   },
   {
-    title: 'Team Management',
+    title: 'Additional Setup',
     description: (
       <>
-        Invite team members, assign roles and permissions, and give your technicians 
-        access to the mobile app for efficient field operations.
+        Configure company settings, manage readings, and customize additional features 
+        to tailor JobRoutr to your specific business needs.
       </>
     ),
-    link: '/docs/onboarding/invite-team',
+    link: '/docs/additional-setup/company-settings',
   },
 ];
 
