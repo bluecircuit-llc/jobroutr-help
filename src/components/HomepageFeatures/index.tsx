@@ -61,6 +61,16 @@ const FeatureList: FeatureItem[] = [
     link: '/docs/operations/dashboard',
   },
   {
+    title: 'Invoicing',
+    description: (
+      <>
+        Set up and manage invoicing within JobRoutr. Learn how to generate invoices 
+        for your customers and streamline your billing process.
+      </>
+    ),
+    link: '/docs/invoicing/generate-invoices',
+  },
+  {
     title: 'Additional Setup',
     description: (
       <>
